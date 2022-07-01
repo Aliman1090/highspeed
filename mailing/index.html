@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<nav>
+			<div id="notRegister">
+				<a href="composer_php.html"><button>SignUp</button></a>
+				<a href="login.html"><button>SignIn</button></a>
+			</div>
+			<div style="visibility: hidden" id="divUsuario">
+				<a href="#"><button id="usuario"></button></a>
+				<a href="#"><button>LogOut</button></a>
+			</div>
+		</nav>
+		<script>
+			if (getCookie("nombre")) {
+				document.getElementById("notRegister").style.visibility = "hidden";
+				document.getElementById("divUsuario").style.visibility = "visible";
+				document.getElementById("usuario").innerHTML = getCookie("nombre");
+			}
+			function getCookie(cname) {
+				let name = cname.trim() + "=";
+				let decodedCookie = decodeURIComponent(document.cookie);
+				let ca = decodedCookie.split(";");
+				for (let i = 0; i < ca.length; i++) {
+					let c = ca[i];
+					while (c.charAt(0) == " ") {
+						c = c.substring(1);
+					}
+					if (c.indexOf(name) == 0) {
+						return c.substring(name.length, c.length);
+					}
+				}
+				return "";
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script defer src="/contacta/contacta.js"></script>
+
+		<style>
+			.inputError {
+				background-color: rgb(110, 5, 5);
+				border: 2px solid red;
+			}
+			.inputSucces {
+				background-color: rgb(78, 108, 3);
+				border: 2px solid green;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="well">
+			<div class="contact_form">
+				<div id="note"></div>
+				<div id="fields">
+					<div class="form-group">
+						<input
+							type="text"
+							class="form-control"
+							id="nameContacta"
+							placeholder="Nombre (requerido)"
+							required
+						/>
+					</div>
+					<div class="form-group">
+						<input
+							type="text"
+							class="form-control"
+							id="apellidoContacta"
+							placeholder="Apellidos"
+						/>
+					</div>
+					<div class="form-group">
+						<input
+							type="text"
+							class="form-control"
+							id="phoneContacta"
+							placeholder="Telefono"
+						/>
+					</div>
+					<div class="form-group">
+						<input
+							type="email"
+							class="form-control"
+							id="emailContacta"
+							placeholder="Email(requerido)"
+						/>
+					</div>
+					<div class="form-group">
+						<input
+							type="text"
+							class="form-control"
+							id="asuntoContact"
+							placeholder="Asunto"
+						/>
+					</div>
+					<div class="form-group">
+						<textarea
+							id="textAreaContacta"
+							class="form-control"
+							rows="3"
+							placeholder="Mensaje"
+						></textarea>
+					</div>
+					<div class="form-group">
+						<input
+							class="form-control"
+							id="g-recaptcha-response"
+							name="g-recaptcha-response"
+							disabled="disabled"
+						/>
+					</div>
+
+					<!-- <div class="clear"></div> -->
+					<button id="limpiar" class="btn-primary" value="Limpiar Form">
+						Limpiar Form
+					</button>
+					<input
+						id="buttonContacta"
+						type="submit"
+						class="btn btn-primary"
+						value="Enviar"
+					/>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

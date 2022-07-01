@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="icon" href="/img/favicon.jpg" />
+		<link rel="stylesheet" href="/css/login_form_sign.css" type="text/css" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<script defer src="./registrarse.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js?render=6LepHlMgAAAAAPTY7N2X6M7AkmJL7v3Dv5S86Ywx"></script>
+
+		<style>
+			.inputError {
+				background-color: rgb(110, 5, 5);
+				border: 2px solid red;
+			}
+			.inputSucces {
+				background-color: rgb(78, 108, 3);
+				border: 2px solid green;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="contenedor">
+			<div id="contenedorcentrado">
+				<div id="login">
+					<div id="loginform">
+						<label for="nombre">Nombre</label>
+						<input
+							id="nameSignUp"
+							placeholder="Nombre"
+							type="text"
+							name="nombre"
+							required
+						/>
+
+						<label for="apellido">Apellido</label>
+						<input
+							id="firstNameSignUp"
+							placeholder="Apellido"
+							type="text"
+							name="apellido"
+							required
+						/>
+
+						<label for="phone">Telefono</label>
+						<input
+							id="phoneSignUp"
+							placeholder="Telefono"
+							type="text"
+							name="phone"
+							required
+						/>
+
+						<label for="dni">DNI</label>
+						<input
+							id="dniSignUp"
+							placeholder="Dni"
+							type="text"
+							name="dni"
+							required
+						/>
+
+						<label for="usuario">Email</label>
+						<input
+							id="emailSignUp"
+							placeholder="Email"
+							type="email"
+							name="email"
+							required
+						/>
+
+						<label for="password">Contraseña</label>
+						<input
+							id="passwordSignUp"
+							type="password"
+							placeholder="Contraseña"
+							name="password"
+							required
+						/>
+
+						<input
+							id="g-recaptcha-response"
+							name="g-recaptcha-response"
+							class="inputs_form_login"
+							disabled="disabled"
+						/>
+
+						<button
+							id="buttonRegistro"
+							type="submit"
+							title="Ingresar"
+							name="Ingresar"
+						>
+							Login
+						</button>
+					</div>
+				</div>
+				<div id="derecho">
+					<div class="titulo">Bienvenido</div>
+					<hr />
+					<div class="pie-form">
+						<a
+							onclick="alert('Recuperalo enviando un email a:highspeed@gmail.com')"
+							>¿Perdiste tu contraseña?</a
+						>
+						<a href="login.html">Ya eres cliente. Accede!</a>
+						<hr />
+						<a href="/index.html">« Volver</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,133 @@
+body {
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		0deg,
+		rgb(155, 155, 155) 0%,
+		rgb(255, 255, 255) 15%
+	);
+	overflow: visible;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.menu{
+	margin-left: 160px;
+	display: flex;
+}
+.container {
+	width: 280px;
+	margin: 70px 30px 0px 80px;
+	float: right;
+	background-color: rgb(219, 176, 58);
+}
+.col-sm {
+	background-color: rgb(0, 0, 0);
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	margin-top: -20px;
+}
+.moto{
+	float: right;
+	margin-bottom: 35px;
+	right: 0;
+	bottom: 0;
+}
+#logo {
+	margin-left: 90px;
+	margin: auto;
+}
+.botones a:link,
+a:visited {
+	background-color: #f44336;
+	color: white;
+	padding: 14px 25px;
+	margin: 2px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 5px;
+}
+button {
+	margin: 0px 0px 0px 15px;
+	background-color: rgb(218, 22, 22);
+	color: white;
+	border-color: rgb(218, 22, 22);
+	cursor: pointer;
+}
+.but {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding: 8px 26px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 0px;
+	cursor: pointer;
+  }
+  .button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+p {
+	font-size: 70px;
+	color: rgb(88, 8, 8);
+	float: right;
+	margin: 120px 300px 50px;
+}
+footer {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	text-align: center;
+	border-radius: 20px 20px 0px 0px;
+}
+.productos{
+	text-align: center;
+	margin-top: 100px;
+}
+.producto {
+	position: relative;
+	width: 25%;
+	margin: 20px;
+	display: inline-block;
+	cursor: pointer;
+  }
+  
+  .image {
+	display: block;
+	width: 100%;
+	height: auto;
+  }
+  
+  .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #b42424;
+  }
+  .producto:hover .overlay {
+	  opacity: 0.9;
+  }
+  
+  .text {
+	color: white;
+	font-size: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+  }
